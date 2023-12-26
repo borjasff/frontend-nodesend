@@ -28,7 +28,7 @@ export async function getServerSidePaths() {
     }
 }
 
-export default ({link}) => {
+export default function Link({link}){
 
     const AppContext = useContext(appContext)
     const {  showAlert, message_file} = AppContext
